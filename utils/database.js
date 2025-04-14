@@ -1,4 +1,4 @@
-/* const express=require("express");
+const express=require("express");
 const mongoose=require("mongoose");
 
 const URI="mongodb://127.0.0.1:27017/finalproject";
@@ -15,23 +15,7 @@ const database=async(req,res)=>{
 
 }
 
-module.exports=database; */
+module.exports=database; 
 
 
 
-const mongoose = require("mongoose");
-
-const database = async () => {
-    const URI="mongodb://127.0.0.1:27017/finalproject";
-    try {
-        await mongoose.connect(URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log("Database connected...!");
-    } catch (err) {
-        console.error("Database connection error:", err);
-    }
-};
-
-module.exports = database;
