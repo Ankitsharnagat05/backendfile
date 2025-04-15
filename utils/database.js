@@ -1,7 +1,7 @@
 const express=require("express");
 const mongoose=require("mongoose");
 
-const URI="mongodb://127.0.0.1:27017/finalproject";
+const URI="mongodb+srv://ankitsharnagat182:ankitsharnagatankit@cluster0.f1u14av.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 const database=async(req,res)=>{
     try{
@@ -11,6 +11,7 @@ const database=async(req,res)=>{
 
     }catch(err){
         console.log("database URI are not a correct");
+        console.log(err)
     }
 
 }
