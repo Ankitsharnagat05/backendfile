@@ -7,7 +7,7 @@ const cors=require("cors");
 const ErrorMiddleware=require("./middleware/error_middleware");
 
 const corsOptions={
-    origin:"http://localhost:5173",
+    origin:["http://localhost:5173","https://67ff410954d743c1da41f6a3--myprotfolioweb.netlify.app"],
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credentials:true,
 }
